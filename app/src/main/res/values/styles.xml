@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="welcome">
+
+        <item name="android:textSize">
+            48sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+    <style name="admin_login">
+
+        <item name="android:textSize">
+            48sp
+        </item>
+
+        <item name="android:textColor">
+            #FFA400
+        </item>
+
+        <item name="android:shadowColor">
+            #B3000000
+        </item>
+
+        <item name="android:shadowDx">
+            0
+        </item>
+
+        <item name="android:shadowDy">
+            4
+        </item>
+
+        <item name="android:shadowRadius">
+            7
+        </item>
+
+    </style>
+
+
+    <!-- strings.xml -->
+    <string name="admin_login">
+
+CENTRAL LIBRARY
+</string>
+</resources>

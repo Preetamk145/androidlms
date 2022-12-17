@@ -1,0 +1,16 @@
+
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Give Book"
+        android:id="@+id/givebook"
+        android:icon="@drawable/ic_baseline_menu_book_24"/>
+    <item android:title="Book List"
+        android:id="@+id/booklist"
+         android:icon="@drawable/ic_baseline_list_alt_24"
+        tools:ignore="HardcodedText" />
+    <item android:title="User"
+        android:id="@+id/user"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        tools:ignore="HardcodedText" />
+</menu>
