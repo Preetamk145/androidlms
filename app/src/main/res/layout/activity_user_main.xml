@@ -241,6 +241,8 @@
         android:id="@+id/usntext"
         android:layout_width="407dp"
         android:layout_height="62dp"
+        android:textAlignment="center"
+        android:textColor="#1C1A1A"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

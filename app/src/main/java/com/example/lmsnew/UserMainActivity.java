@@ -37,11 +37,12 @@ public class UserMainActivity extends AppCompatActivity {
         ref.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
-                    String usn = documentSnapshot.getString("usn");
-                    
+                    String usnt = documentSnapshot.getString("usn");
+                     usn.setText(usnt);
 
 
             }
         });
+
     }
 }
