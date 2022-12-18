@@ -13,13 +13,14 @@ import android.widget.EditText;
 public class AdminManinActivity extends AppCompatActivity {
 
     View adduser;
+    View booklist;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_manin);
         adduser=findViewById(R.id.user);
-
+        booklist=findViewById(R.id.booklist);
         adduser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,6 +29,15 @@ public class AdminManinActivity extends AppCompatActivity {
 
             }
         });
+        booklist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(AdminManinActivity.this,booklist.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
 }
