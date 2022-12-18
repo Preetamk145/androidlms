@@ -2,7 +2,9 @@ package com.example.lmsnew;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -16,10 +18,15 @@ public class UserMainActivity extends AppCompatActivity {
 
    FirebaseAuth auth;
    FirebaseFirestore frs;
+   TextView usn;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_main);
+        auth=FirebaseAuth.getInstance();
+        frs=FirebaseFirestore.getInstance();
+        usn=findViewById(R.id.usntext);
 
     }
     @Override
@@ -31,7 +38,8 @@ public class UserMainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                     String usn = documentSnapshot.getString("usn");
-                    Toast.makeText(UserMainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                    
+
 
             }
         });

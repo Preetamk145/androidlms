@@ -227,13 +227,27 @@
     </ScrollView>
 
     <ImageView
-        android:layout_width="426dp"
-        android:layout_height="110dp"
+        android:id="@+id/imageView2"
+        android:layout_width="413dp"
+        android:layout_height="144dp"
         android:background="@drawable/curve"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/usntext"
+        android:layout_width="407dp"
+        android:layout_height="62dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
