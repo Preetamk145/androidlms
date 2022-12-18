@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".addbook">
 
-    <TextView
-        android:id="@+id/textView23"
+    <EditText
+        android:id="@+id/author"
         android:layout_width="300dp"
         android:layout_height="79dp"
-        android:text="TextView"
+        android:background="#FDA403"
+        android:hint="enter the author name"
+        android:textAlignment="center"
+        android:textColorHint="#151414"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -18,21 +22,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.624" />
 
-    <TextView
+    <EditText
         android:id="@+id/bookname"
         android:layout_width="300dp"
         android:layout_height="79dp"
+        android:background="#FDA403"
+        android:hint="enter the book name"
+        android:textAlignment="center"
+        android:textColorHint="#0C0C0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.403" />
 
-    <TextView
+    <EditText
         android:id="@+id/bookid"
         android:layout_width="300dp"
         android:layout_height="79dp"
+        android:background="#FDA403"
+        android:hint="enter the book id"
+        android:textAlignment="center"
+        android:textColorHint="#222020"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -41,10 +53,12 @@
         app:layout_constraintVertical_bias="0.177" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/add"
         android:layout_width="140dp"
         android:layout_height="64dp"
-        android:text="Button"
+        android:backgroundTint="#FDA403"
+        android:text="ADD"
+        android:textColorHint="#191818"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
