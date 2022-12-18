@@ -49,7 +49,7 @@ public class addbook extends AppCompatActivity {
                 ref.set(booktable).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        Toast.makeText(addbook.this, "registration successful", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(addbook.this, "book added successful", Toast.LENGTH_SHORT).show();
                         finish();
                         startActivity(new Intent(addbook.this,userregistration.class));
                     }
