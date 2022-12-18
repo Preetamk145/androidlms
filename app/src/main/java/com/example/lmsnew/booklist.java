@@ -27,12 +27,12 @@ public class booklist extends AppCompatActivity {
         int id=item.getItemId();
         if(id==R.id.adduser)
         {
-            Intent intent=new Intent(add_user.this,userregistration.class);
+            Intent intent=new Intent(booklist.this,addbook.class);
             startActivity(intent);
         }
         if(id==R.id.logout)
         {
-            Intent intent=new Intent(add_user.this,MainActivity.class);
+            Intent intent=new Intent(booklist.this,MainActivity.class);
             startActivity(intent);
         }
 
