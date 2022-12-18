@@ -1,10 +1,13 @@
 package com.example.lmsnew;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class add_user extends AppCompatActivity {
 
@@ -20,4 +23,20 @@ public class add_user extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id=item.getItemId();
+        if(id==R.id.adduser)
+        {
+            Intent intent=new Intent(add_user.this,userregistration.class);
+            startActivity(intent);
+        }
+        if(id==R.id.logout)
+        {
+            Intent intent=new Intent(add_user.this,MainActivity.class);
+            startActivity(intent);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }
