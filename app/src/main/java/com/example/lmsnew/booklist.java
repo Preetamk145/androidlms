@@ -25,7 +25,7 @@ public class booklist extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id=item.getItemId();
-        if(id==R.id.adduser)
+        if(id==R.id.book)
         {
             Intent intent=new Intent(booklist.this,addbook.class);
             startActivity(intent);
