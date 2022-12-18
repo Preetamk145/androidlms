@@ -227,12 +227,13 @@
     </ScrollView>
 
     <ImageView
-        android:layout_width="420dp"
-        android:layout_height="123dp"
+        android:layout_width="426dp"
+        android:layout_height="110dp"
         android:background="@drawable/curve"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="-1dp" />
+        tools:layout_editor_absoluteY="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
