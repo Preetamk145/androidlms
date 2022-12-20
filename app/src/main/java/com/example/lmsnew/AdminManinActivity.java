@@ -24,8 +24,8 @@ public class AdminManinActivity extends AppCompatActivity {
         adduser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(AdminManinActivity.this,add_user.class);
-                startActivity(intent);
+//                Intent intent=new Intent(AdminManinActivity.this,add_user.class);
+//                startActivity(intent);
 
             }
         });

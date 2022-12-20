@@ -8,8 +8,9 @@
     tools:context=".AdminManinActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="407dp"
-        android:layout_height="92dp"
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="412dp"
+        android:layout_height="67dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,12 +19,106 @@
         app:menu="@menu/bootm_navbar" />
 
     <ImageView
-        android:layout_width="413dp"
-        android:layout_height="144dp"
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="126dp"
         android:background="@drawable/curve"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:visibility="gone"
+        android:layout_width="354dp"
+        android:layout_height="68dp"
+        android:backgroundTint="#FDA403"
+        android:text="ADD USER"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/scrollView3"
+        android:layout_width="358dp"
+        android:layout_height="238dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.45"/>
+
+    <SearchView
+        android:layout_width="364dp"
+        android:visibility="gone"
+        android:layout_height="69dp"
+        android:backgroundTint="#FFFFFF"
+        android:searchIcon="@drawable/search"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="370dp"
+        android:layout_height="65dp"
+        android:searchIcon="@drawable/search"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" >
+
+    </SearchView>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="366dp"
+        android:layout_height="203dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="347dp"
+        android:layout_height="80dp"
+        android:text="GIVE BOOK"
+        android:textSize="20sp"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="345dp"
+        android:layout_height="80dp"
+        android:text="TAKE BOOK"
+        android:textSize="20sp"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
