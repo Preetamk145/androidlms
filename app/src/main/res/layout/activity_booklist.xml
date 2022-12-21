@@ -42,7 +42,7 @@
         app:menu="@menu/bootm_navbar" />
 
     <ScrollView
-        android:id="@+id/scrollView4"
+        android:id="@+id/scrollbook"
         android:layout_width="376dp"
         android:layout_height="290dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +55,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerbook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
     </ScrollView>
 
     <Button

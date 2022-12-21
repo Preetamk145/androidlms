@@ -15,6 +15,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class booklist extends AppCompatActivity {
 
     Button addbook;
+    Integer id;
+    String bookname,authorname;
     BottomNavigationView bootomnavbar;
     @SuppressLint("MissingInflatedId")
     @Override
