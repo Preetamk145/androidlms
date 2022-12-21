@@ -41,13 +41,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".booklist_admin"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".UserMainActivity"
             android:exported="false">
             <meta-data
