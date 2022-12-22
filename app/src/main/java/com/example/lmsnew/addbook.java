@@ -1,7 +1,5 @@
 package com.example.lmsnew;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -51,7 +51,7 @@ public class addbook extends AppCompatActivity {
                     public void onSuccess(Void unused) {
                         Toast.makeText(addbook.this, "book added successful", Toast.LENGTH_SHORT).show();
                         finish();
-                        startActivity(new Intent(addbook.this,userregistration.class));
+                        startActivity(new Intent(addbook.this,AdminManinActivity.class));
                     }
                 });
 

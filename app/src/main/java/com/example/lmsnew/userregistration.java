@@ -1,14 +1,14 @@
 package com.example.lmsnew;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -52,7 +52,6 @@ public class userregistration extends AppCompatActivity {
                     public void onSuccess(AuthResult authResult) {
                         FirebaseUser usr = auth.getCurrentUser();
 
-
                         DocumentReference ref = fire.collection("userinfo").document(usr.getUid());
 
                         HashMap <String,Object> userinfo = new HashMap<>();
@@ -65,7 +64,7 @@ public class userregistration extends AppCompatActivity {
                             public void onSuccess(Void unused) {
                                 Toast.makeText(userregistration.this, "registration successful", Toast.LENGTH_SHORT).show();
                                 finish();
-                                startActivity(new Intent(userregistration.this,userregistration.class));
+                                startActivity(new Intent(userregistration.this,AdminManinActivity.class));
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
