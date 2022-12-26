@@ -8,7 +8,7 @@
     tools:context=".GiveBook">
 
     <EditText
-        android:id="@+id/bookaddid"
+        android:id="@+id/bookadid"
         android:layout_width="316dp"
         android:layout_height="71dp"
         android:background="#FDA403"
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.217" />
 
     <EditText
-        android:id="@+id/addbookid"
+        android:id="@+id/booktitle"
         android:layout_width="311dp"
         android:layout_height="68dp"
         android:background="#FDA403"
@@ -114,7 +114,7 @@
         android:layout_height="72dp"
         android:background="#FDA403"
         android:hint="enter date"
-        android:inputType="date"
+        android:inputType="datetime"
         android:textAlignment="center"
         android:textColorHint="#171616"
         app:layout_constraintBottom_toBottomOf="parent"

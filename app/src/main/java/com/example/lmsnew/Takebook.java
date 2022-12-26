@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -12,11 +11,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Takebook extends AppCompatActivity {
     EditText removebookusn,removebookid;
     Button takebook;
     BottomNavigationView bootomnavbar;
+    FirebaseAuth auth;
+    FirebaseFirestore fire;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +30,8 @@ public class Takebook extends AppCompatActivity {
         takebook=findViewById(R.id.removebook);
         bootomnavbar=findViewById(R.id.bottomNavigationView);
         bootomnavbar.setSelectedItemId(R.id.givebook);
-        takebook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        auth=FirebaseAuth.getInstance();
+        fire=FirebaseFirestore.getInstance();
         bootomnavbar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

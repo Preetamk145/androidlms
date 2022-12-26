@@ -45,7 +45,7 @@ public class addbook extends AppCompatActivity {
                 HashMap<String,Object> booktable = new HashMap<>();
                 booktable.put("id",getid);
                 booktable.put("name",getname);
-                booktable.put("author name",getauthor);
+                booktable.put("authorname",getauthor);
                 ref.set(booktable).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
